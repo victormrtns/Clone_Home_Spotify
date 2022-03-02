@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto",sans-serif;
+}
+/* Trabalhando com a navbar */
+#navbar{
+    display: flex;
+    background-color: rgba(0,0, 0,0.6);
+    color: white;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar-container{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute items evenly
+                                   The first item is flush with the start,
+                                   the last is flush with the end */
+    padding: 20px 0;
+}
+.logo{
+    height: 40px;
+    width: auto;
+}
+.navbar-container ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+.navbar-container ul li{
+    padding: 0 20px;
+}
+.navbar-container ul li:hover{
+    color: #1db954;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.navbar-container ul li:nth-child(3){
+    border-right: 1px solid white;
+}
+
+/* Fim */
+
+/* showcase */
+
+#showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background:url('showcase.webp') center center/cover;
+    background-color: rgba(0,0, 0,0.4);
+    background-blend-mode: color;
+}
+
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.showcase-container h2{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.showcase-container p{
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+
+.btn-showcase{
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background-color: #1db954;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    letter-spacing: 1px;
+}
+
+.btn-showcase:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+    box-shadow: 10px 5px 5px black;
+}
+
+/* Fim do showcase */
+
+/* Comeco do footer menu */
+
+#footer{
+    background-color: black;
+    color: white;
+    padding: 80px 0;
+}
+.footer-content{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+ .footer-content .footer-menu{
+    list-style: none;
+    margin: 0 40px;
+}
+.footer-content .footer-menu p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.8rem;
+}
+.footer-menu-itens{
+    margin: 25px 0;
+}
+
+.footer-menu-itens:hover{
+    color: #1db954;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer-info .footer-info-item{
+    list-style: none;
+}
+
+/* Fim do footer menu */
+
+/* Footer info */
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.75rem;  
+    padding-top: 30px;
+}
+.footer-info-item{
+    display: flex;
+    list-style: none;
+}
+.footer-info-itens{
+    margin: 0 10px;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.75rem;
+}
+.footer-info-itens:hover{
+    color: #1db954;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.country{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.country .brasil-flag{
+    height: 20px;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+}
